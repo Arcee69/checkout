@@ -1,0 +1,225 @@
+/****** 
+    GENERAL STYLING 
+******/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;   
+    line-height: 1.3;
+    overflow-x: hidden;
+}
+
+/****** 
+    MAIN STYLES 
+******/
+
+h3 {
+    margin-left: 10.4%;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    margin: 10px 0px;
+}
+
+.select {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.select > .box:nth-child(2) {
+    margin-left: 5px;
+}
+
+label {
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input {
+    margin-top: 4px;
+    padding: 8px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+select {
+    margin-top: 4px;
+    padding: 8px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+select > option {
+    color: #666;
+}
+
+.checkbox {
+    font-size: 14px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.align {
+    margin-top: 3%;
+    text-align: right;
+}
+
+.continue-btn {
+    width: 30%;
+    padding: 8px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-radius: 5px;
+    background-color: orange;
+    color: #fff;
+    cursor: pointer;
+}
+
+/****** 
+    PRODUCT STYLING 
+******/
+
+.second-box {
+    width: 30%;
+    height: 500px;
+    padding: 10px;
+    background-color: #e0e0d2;
+    border-radius: 5px;
+}
+
+img {
+    width: 70%;
+    height: auto;
+    border-radius: 15px;
+}
+
+.row-1 {
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.row-price {
+    margin-top: 0;
+    margin-bottom: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.product {
+    width: 100%;
+    font-size: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 0;
+}
+
+.btn {
+    margin-top: 3px;
+    width: 1.2rem;
+    height: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.row-btn {
+    display: flex;
+    height: 40px;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+p {
+    margin-top: 4%;
+    font-size: 14px;
+}
+
+.column {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 0px;
+}
+
+.row-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10px;
+    border: 1px solid black;
+    border-right: 0px;
+    border-left: 0px;
+    border-bottom: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/****** 
+    FOOTER STYLING 
+******/
+
+footer {
+    color: #666 ;
+    text-align: center;
+}
+
+/***** 
+    RESPONSIVENESS 
+*****/
+
+@media (min-width: 810px) {
+    .hidden-lg {
+        display: none;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 800px){
+    .hidden-sm {
+        display: none;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        align-content: space-around;
+        align-items: center;
+    }
+
+    form {
+        width: 90%;
+    }
+
+    .select {
+        display: block;
+    }
+
+    .select > .box:nth-child(2) {
+        margin-left: 0;
+    }
+
+    .second-box {
+        width: 90%;
+    }
+}
