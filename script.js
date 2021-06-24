@@ -43,9 +43,6 @@ countSB.addEventListener('click', () => {
 });
 
 function click() {
-    if (tag === true) {
-        alert('Verification Successful');
-    } else {
-        alert('Please complete the input form');
-    }
+  (tag != '') ? alert('Verification Successful') 
+              : alert('Please fill in your details')
 }
